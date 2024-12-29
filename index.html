@@ -52,10 +52,25 @@
           <p>Give here some context about the manuscript and the assignment by writing directly into the html, for example:</p>
           <ul>
             <li>A photograph of Mary Shelley and Percy Shelley;</li>
-            <li>A table/list with the pages in this digital edition;</li>
-            <li>A link to the Bodleian Library (https://www.bodleian.ox.ac.uk/home)</li>
-            <li>A link to the Shelley Godwin Archive, on which this digital edition was based (http://shelleygodwinarchive.org/)</li>
-            <li>Your name!</li>
+            <li>A table/list with the pages in this digital edition;
+              <table>
+                <caption>Page Overview</caption>
+                <tr>
+                    <th>Page Name</th>
+                    <th>Page Number</th>
+                </tr>
+                <xsl:for-each select="//book">
+                    <tr>
+                        <td><xsl:value-of select="title"/></td>
+                        <td><xsl:value-of select="author"/></td>
+                        <td><xsl:value-of select="translator"/></td>
+                    </tr>
+                </xsl:for-each>
+            </table>
+            </li>
+            <li>A link to the <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a></li>
+            <li>A link to the <a href="http://shelleygodwinarchive.org/">Shelley Godwin Archive</a>, on which this digital edition was based.</li>
+            <li>Your name! Stijn Omloop</li>
             <li>The licence, including link: (https://creativecommons.org/licenses/by-nc/4.0/) </li>
             <li>A link to the encoding manual (https://bdmpmanual.uantwerpen.be/)</li>
           </ul>
