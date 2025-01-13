@@ -70,8 +70,16 @@
         </span>
     </xsl:template>
     
-    
+    <xsl:template match="tei:lb">
+        <br/>
+    </xsl:template>
     <!-- add additional templates below, for example to transform the tei:lb in <br/> empty elements, tei:hi[@rend = 'sup'] in <sup> elements, the underlined text, additions with the attribute "overwritten" etc. -->
 
+    <xsl:template match="tei:hi[@rend = 'sup']">
+        
+    </xsl:template>
+    <xsl:template match="tei:hi[@rend = 'u']"></xsl:template>
+    <xsl:template match="tei:hi[@rend = 'circled']"></xsl:template>
+  
     
 </xsl:stylesheet>

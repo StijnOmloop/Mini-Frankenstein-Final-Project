@@ -60,7 +60,7 @@
         <lb/>
         
           <del type="crossedOut" hand="#MWS" rend="blackink">was</del>
-          <add place="supralinear" hand="#MWS" rend="blackink">became</add>
+          <add place="supralinear" hand="#PBS" rend="blackink">became</add>
           convul
           <del type="overwritten" hand="#MWS" rend="blackink"><!-- unclear char --></del>
           <add place="inline" hand="#MWS" rend="blackink">s</add>
@@ -89,7 +89,7 @@
         he might have spoken but I did not<lb/>
         hear — one <choice><sic>had</sic><corr>hand</corr></choice> was stretched out<lb/>
         to detain me but I escaped and <del type="crossedOut" hand="#PBS" rend="blackink">ran</del><lb/>
-        rushed down <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink">the</add></del> stairs I took refuge in<lb/>
+        rushed down <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink">the</add></del> stair s <del type="crossedOut" hand="#PBS" rend="blackink" resp="SO"> case</del> I took <del type="crossedOut" hand="#PBS" rend="blackink"><add place="supralinear" hand="#PBS" rend="blackink" resp="SO">the</add></del> refuge in<lb/>
         a court-yard belonging to the house<lb/>
         which I inhabited; where I remained<lb/>
         <add place="marginleft" hand="#PBS" rend="blackink">during</add>the rest of the night walking up and<lb/>
@@ -105,7 +105,7 @@
         <add place="margintop" hand="#MWS" rend="blackink">again</add>
         endued with 
         <del type="crossedOut" hand="#MWS" rend="blackink">life</del>
-        <add place="supralinear" hand="#MWS" rend="blackink">animation</add> 
+        <add place="marginright" hand="#PBS" rend="blackink">animation</add> 
           could not be<lb/>
       </p></div>
     </body>

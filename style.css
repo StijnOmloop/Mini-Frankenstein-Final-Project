@@ -2,16 +2,23 @@ body {
 
 }
 .starter-template {
-  padding: 40px 15px;
+  padding: 15px 15px;
   text-align: center;
 }
+
+#text {
+    white-space: pre-wrap;
+    line-height: 1.0;
+    font-family: "Times New Roman", serif; 
+    position: relative;
+  }
 
 img {
     max-width: 100%;
 }
 
 p {
-    text-indent: 10px;
+    text-indent: 5px;
 }
 
 .row {
@@ -28,8 +35,49 @@ p {
     display: none;
 }
 
+/**sup {
+    vertical-align: super; 
+    font-size: 75%; 
+    position: relative;
+    top: -0.5em; 
+    left: -0.1em; 
+    font-size: 70%; 
+  }
+**/
 .mirador-canvas-nav {
     display: none !important;
 }
 
+.supraAdd {
+    /**vertical-align: super;
+    font-size: 80%;
+    position: relative;
+    top: -0.5em; 
+    left: -0.1em; 
+    font-size: 70%;
+    vertical-align: top; 
+    line-height: 
+    margin-left: -0.1em; 
+    margin-right: -0.1em;**/
+    
 
+}
+
+.row {
+    display: flex;
+  }
+  
+  .col-5, .col-7 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #my-mirador {
+    flex: 1;
+  }
+  
+  #text {
+    flex: 1;
+    margin-left: 15px; /* Add some spacing from the image */
+  }
+ /*position: relative; top: -0.5em; font-size: 80%;*/
