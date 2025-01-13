@@ -96,28 +96,28 @@ function documentLoader() {
   // Initial document load
   documentLoader();
   statsLoader();
-  // Event listener for sel1 change
+  // Event listener for selector change
   function selectHand(event) {
   var visible_mary = document.getElementsByClassName('#MWS');
   var visible_percy = document.getElementsByClassName('#PBS');
-  var visible_both = document.getElementsByClassName('#MWS' && '#PBS');
+  
+  
   // Convert the HTMLCollection to an array for forEach compatibility
   var MaryArray = Array.from(visible_mary);
   var PercyArray = Array.from(visible_percy);
-  var BothArray = Array.from(visible_both);
+  
+
     if (event.target.value == 'both') {
     //write an forEach() method that shows all the text written and modified by both hand (in black?). The forEach() method of Array instances executes a provided function once for each array element.
-    BothArray.forEach(element => {
-      element.style.color = 'black';
-    })
-    /**PercyArray.forEach(element => {
+      PercyArray.forEach(element => {
       element.style.color = 'black'; 
-    });
-    MaryArray.forEach(element => {
+      });
+      MaryArray.forEach(element => {
       element.style.color = 'black';
-    });
-    **/
-    } else if (event.target.value == 'Mary') {
+      });
+    }
+    
+    else if (event.target.value == 'Mary') {
       MaryArray.forEach(element => {
         element.style.color = 'purple';
       });
@@ -136,5 +136,26 @@ function documentLoader() {
     });
     }
   }
-// write another function that will toggle the display of the deletions by clicking on a button
+  function deletionsToggle(){
+  var deletions = document.getElementsByTagName('del')
+  var deletionsArray = Array.from(deletions);
+  var deletionStatus = false 
+    deletionsArray.forEach(element => {
+      deletionStatus = element.hidden;
+    })
+    if(deletionStatus == false){
+    deletionsArray.forEach(element => {
+      element.hidden = true;
+    })
+    }
+    else{
+    deletionsArray.forEach(element => {
+      element.hidden = false;
+    })
+
+   }
+ 
+  }
+  
+
 // EXTRA: write a function that will display the text as a reading text by clicking on a button or another dropdown list, meaning that all the deletions are removed and that the additions are shown inline (not in superscript)
