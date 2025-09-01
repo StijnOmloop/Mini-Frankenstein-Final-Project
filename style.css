@@ -111,6 +111,69 @@ p {
  .mirador-canvas-nav {
      display: none !important;
  }
- 
+ /* Styling for the editorial notes you added */
+.editorial-note {
+  color: #28a745; /* A pleasant green color from Bootstrap */
+  font-style: italic;
+  font-size: 0.9em; /* Make it slightly smaller than the main text */
+  vertical-align: super; /* Lifts it up slightly like a footnote marker */
+}
+
+/* Styling for the metamarks from the manuscript */
+.metamark {
+  color: #dc3545; /* A red color from Bootstrap */
+  font-weight: bold;
+  font-family: monospace; /* Helps it stand out as a symbol */
+}
+
+/* Styling to create the circled page number */
+.page-number {
+  display: inline-flex; /* Allows for centering */
+  align-items: center;  /* Vertically centers the number */
+  justify-content: center; /* Horizontally centers the number */
+  
+  height: 30px;         /* Circle height */
+  width: 30px;          /* Circle width */
+
+  background-color: #f0f0f0; /* A light grey background */
+  border: 1px solid #ccc; /* A subtle border */
+  border-radius: 50%;   /* This is the magic that makes it a circle */
+  
+  font-weight: bold;
+  color: #333;
+  
+  float: right; /* Pushes the circle to the top right of its container */
+  margin: 5px;
+}
+
+/* General styling for all additions to make them stand out */
+.addition {
+  color: #006400; /* A dark green color for readability */
+  font-style: italic;
+}
+
+/* Specific styling for additions that are above the line (supralinear) */
+.supralinear {
+  vertical-align: super;
+  font-size: 0.8em; /* Make them slightly smaller, like footnote markers */
+}
+
+/* Specific styling for additions that were written over other text */
+.overwritten {
+  background-color: #fff3cd; /* A subtle yellow highlight from Bootstrap */
+  padding: 1px 2px;
+  border-radius: 3px;
+  font-style: normal; /* Override the italic style for more emphasis */
+}
+
+/* You can add more specific styles here if needed, for example:
+.marginleft {
+  border-left: 2px solid #006400;
+  padding-left: 4px;
+}
+*/
+
+
+
  
  

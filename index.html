@@ -45,39 +45,89 @@
     </nav>
     <div class="container-fluid">
       <h1>Mary Wollstonecraft Shelley - <i>Frankenstein</i></h1>
-      
-      <div class="row">
-        <div class="col-5">   
-            <p>Welcome to the mini digital edition of Mary Shelley's <i>Frankenstein</i>. Made as a project for Text as Data II, taught at the University of Antwerp.</p>
-          <p>Give here some context about the manuscript and the assignment by writing directly into the html, for example:</p>
-          <ul>
-            <li>A photograph of Mary Shelley and Percy Shelley;</li>
-            <li>A table/list with the pages in this digital edition;
-              <table>
-                <caption>Page Overview</caption>
-                <tr>
-                    <th>Page Name</th>
-                    <th>Page Number</th>
-                </tr>
-                <xsl:for-each select="//book">
-                    <tr>
-                        <td><xsl:value-of select="title"/></td>
-                        <td><xsl:value-of select="author"/></td>
-                        <td><xsl:value-of select="translator"/></td>
-                    </tr>
-                </xsl:for-each>
-            </table>
-            </li>
-            <li>A link to the <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a></li>
-            <li>A link to the <a href="http://shelleygodwinarchive.org/">Shelley Godwin Archive</a>, on which this digital edition was based.</li>
-            <li>Your name! Stijn Omloop</li>
-            <li>The licence, including link: (https://creativecommons.org/licenses/by-nc/4.0/) </li>
-            <li>A link to the encoding manual (https://bdmpmanual.uantwerpen.be/)</li>
-          </ul>
-          <p><b>Style all the pages the way you want by diving into the css file.</b></p>
-        </div>
-        <div class="col-7" id="text"></div>
+     <!-- === START OF REPLACEMENT CODE FOR THE ENTIRE ROW === -->
+
+<div class="row">
+  <!-- This single column will now act as the main container for all our content -->
+  <div class="col-12">
+
+      <!-- 1. A new row for the side-by-side portraits -->
+      <div class="row text-center mb-4">
+          <div class="col-md-6">
+              <figure class="figure">
+                  <img src="https://cdn.britannica.com/55/181055-050-F5C64058/Mary-Wollstonecraft-Shelley-oil-canvas-Richard-Rothwell-1840.jpg?w=300" class="figure-img img-fluid rounded" alt="Portrait of Mary Wollstonecraft Shelley" style="max-height: 300px;">
+                  <figcaption class="figure-caption">Mary Wollstonecraft Shelley</figcaption>
+              </figure>
+          </div>
+          <div class="col-md-6">
+              <figure class="figure">
+                  <img src="https://cdn.poemanalysis.com/wp-content/uploads/2023/06/Percy-Bysshe-Shelley-Biography-Portrait.jpeg?strip=all&lossy=1&ssl=1" class="figure-img img-fluid rounded" alt="Portrait of Percy Bysshe Shelley" style="max-height: 300px;">
+                  <figcaption class="figure-caption">Percy Bysshe Shelley</figcaption>
+              </figure>
+          </div>
       </div>
+
+      <!-- 2. A new row for the split table -->
+      <div class="row">
+          <!-- Left half of the table -->
+          <div class="col-md-6">
+              <table class="table table-striped">
+                  <caption>Overview of Manuscript Pages (Part 1)</caption>
+                  <thead>
+                      <tr>
+                          <th scope="col">Manuscript Folio</th>
+                          <th scope="col">Canvas No.</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr> <td><a href="21r.html">21r</a></td> <td>44</td> </tr>
+                      <tr> <td><a href="21v.html">21v</a></td> <td>45</td> </tr>
+                      <tr> <td><a href="22r.html">22r</a></td> <td>46</td> </tr>
+                      <tr> <td><a href="22v.html">22v</a></td> <td>47</td> </tr>
+                      <tr> <td><a href="23r.html">23r</a></td> <td>48</td> </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!-- Right half of the table -->
+          <div class="col-md-6">
+              <table class="table table-striped">
+                  <caption>Overview of Manuscript Pages (Part 2)</caption>
+                  <thead>
+                      <tr>
+                          <th scope="col">Manuscript Folio</th>
+                          <th scope="col">Canvas No.</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr> <td><a href="23v.html">23v</a></td> <td>49</td> </tr>
+                      <tr> <td><a href="24r.html">24r</a></td> <td>50</td> </tr>
+                      <tr> <td><a href="24v.html">24v</a></td> <td>51</td> </tr>
+                      <tr> <td><a href="25r.html">25r</a></td> <td>52</td> </tr>
+                      <tr> <td><a href="25v.html">25v</a></td> <td>53</td> </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+      <!-- 3. A final row for the remaining information -->
+      <div class="row mt-4">
+          <div class="col-12">
+              <p><b>Project Context and Important Links:</b></p>
+              <ul>
+                  <li>This edition is based on the manuscript from the <a href="https://www.bodleian.ox.ac.uk/home">Bodleian Library</a>.</li>
+                  <li>Transcriptions were compared with the <a href="http://shelleygodwinarchive.org/">Shelley-Godwin Archive</a>.</li>
+                  <li>Encoding follows the guidelines from the <a href="https://bdmpmanual.uantwerpen.be/">BDMP Manual</a>.</li>
+                  <li>Project Author: Stijn Omloop</li>
+                  <li>Licence: <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a></li>
+              </ul>
+          </div>
+      </div>
+
+  </div>
+</div>
+
+<!-- === END OF REPLACEMENT CODE === --> 
+      
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
